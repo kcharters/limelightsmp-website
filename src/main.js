@@ -1,10 +1,18 @@
 import './assets/main.css'
-import { VueFire, VueFireAuth } from 'vuefire'
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 // the file we created above with `database`, `firestore` and other exports
 import { firebaseApp } from './firebase'
+import { VueFire, VueFireAuth } from 'vuefire'
+//import bootstrap
+
+
+// Import Bootstrap  CSS files (order is important)
+import 'bootstrap/dist/css/bootstrap.css'
+
+
 
 const app = createApp(App)
 app.use(VueFire, {
@@ -15,5 +23,6 @@ app.use(VueFire, {
     ],
   })
 app.use(router)
+
 
 app.mount('#app')

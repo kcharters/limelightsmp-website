@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app'
 import { getDatabase, ref as dbRef } from 'firebase/database'
-// ... other firebase imports
+import {useFirebaseStorage} from 'vuefire'
 
 export const firebaseApp = initializeApp({
   // your application settings
@@ -19,3 +19,5 @@ export const db = getDatabase(firebaseApp)
 
 // here we can export reusable database references
 export const membersRef = dbRef(db, 'members')
+export const imagesRef = useFirebaseStorage()
+// ... other firebase imports

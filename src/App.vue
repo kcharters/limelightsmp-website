@@ -1,30 +1,24 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import { useDatabaseList } from 'vuefire'
-import { ref as dbRef } from "firebase/database";
-import { db } from './firebase'
 
+import { useDatabaseList } from 'vuefire'
+import { ref as dbRef, } from "firebase/database";
+import { db} from './firebase'
 const todos = useDatabaseList(dbRef(db, 'members'))
 
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-   
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-
+  <div v-for="todo in todos" :key="todo.id">
+    <div class="card" style="width: 18rem;">
+      <img :src=todo.image class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{todo.name}}</h5>
+        <div v-for="link in todo.links.split(',')" >
+        <a :href="link" class="btn btn-primary">{{link}}</a>
+      </div>
+      </div>
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
 <style scoped>
