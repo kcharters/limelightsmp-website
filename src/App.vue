@@ -1,6 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { useDatabaseList } from 'vuefire'
+import { ref as dbRef } from "firebase/database";
+import { db } from './firebase'
+
+const todos = useDatabaseList(dbRef(db, 'members'))
 
 </script>
 
@@ -10,11 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      <ul>
-    <li v-for="member in members" :key="members.id">
-      <span>{{ member.text }}</span>
-    </li>
-  </ul>
+   
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
