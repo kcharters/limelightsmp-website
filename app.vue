@@ -14,11 +14,18 @@ export default {
   }
 }
 </script>
-<template>
+
+<template >
   <div class="container">
   <div v-for="members in myJson" class="row">
     <div v-for="names in members" class="col-sm-3" >
-      <div class="card " style="width: 18rem;">
+      <v-hover v-slot:default="{ isHovering, props }">
+      <v-card :elevation="isHovering ? 16 : 2"
+          :class="{ 'on-hover': isHovering }"
+          class="mx-auto"
+          height="350"
+          max-width="350"
+          v-bind="props">
         <img :src="'../images/' + names.name + '.png'" class="card-img-top" alt="...">
         <div v-if="names.enabled == true" class="card-body">
           <h5 class="card-title">{{ names.name }}</h5>
@@ -28,12 +35,19 @@ export default {
             <a :href="link" class="">{{ link }}</a>
           </div>
         </div>
-      </div>
+      </v-card>
+    </v-hover>
 </div>
 </div>
     </div>
 </template>
-
-<style type="css" scoped>
-/* relevant styles */
+<style lang="scss" scoped>
+.v-card.on-hover.v-theme--dark
+{
+  background-color: rgba(#FFF, 0.8),
+  
+  }
+  .v-card__text{
+    color: #000
+  }
 </style>
