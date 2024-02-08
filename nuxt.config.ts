@@ -8,14 +8,20 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: ['vuetify'],
-},
-vite: {
-define: {
-    'process.env.DEBUG': false,
-},
-},
+  },
+  vite: {
+    define: {
+      'process.env.DEBUG': false,
+    },
+  },
   plugins: [
     { src: "../public/js/bootstrap.bundle.min.js", mode: "client" }
+  ],
+  components: [
+    {
+      path: '../public/components',
+      pathPrefix: false,
+    },
   ],
   buildModules: [
     '@nuxtjs/vuetify'
