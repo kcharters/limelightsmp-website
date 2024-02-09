@@ -59,6 +59,7 @@
     "prefer-stable": true,
     "scripts": {
         "build": [
+            "npm install",
             "npm run build",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@php artisan key:generate",

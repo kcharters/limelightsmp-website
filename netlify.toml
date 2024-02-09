@@ -24,3 +24,12 @@
   for = "/sitemap.xml"
   [headers.values]
 	Content-Type = "application/xml"
+[[headers]]
+  for = "css/site.css"
+  [headers.values]
+    Cache-Control = "max-age=31536000"
+
+[[headers]]
+  for = "js/site.js"
+  [headers.values]
+    Cache-Control = "max-age=31536000"
