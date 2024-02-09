@@ -1,0 +1,276 @@
+{
+  "resolvedId": "C:/Users/kchar/OneDrive/Documents/Projects/limelightsmp-website/app.vue?vue&type=style&index=0&scoped=8b8048b7&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n.v-card.on-hover.v-theme--dark {\r\n  background-color: rgba(#FFF, 0.8),\r\n\r\n}\r\n\r\n.v-card__text {\r\n  color: #000\r\n}\r\n",
+      "start": 1707368398112,
+      "end": 1707368398112,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/kchar/OneDrive/Documents/Projects/limelightsmp-website/app.vue"
+        ],
+        "names": [],
+        "mappings": ";AAyCA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;;AAEnC;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;AACZ",
+        "file": "C:/Users/kchar/OneDrive/Documents/Projects/limelightsmp-website/app.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<script>\r\nimport json from './members.json'\r\n\r\nexport default {\r\n  data() {\r\n    return {\r\n      myJson: json\r\n    }\r\n  },\r\n  methods: {\r\n    splitJoin(theText) {\r\n      return theText.split(',');\r\n\r\n    }\r\n  }\r\n}\r\n</script>\r\n\r\n<template >\r\n  <componentsHeader />\r\n  <div class=\"container\">\r\n    <div v-for=\"members in myJson\" class=\"row\">\r\n      <div v-for=\"names in members\" class=\"col-sm-3\">\r\n        <v-hover>\r\n          <v-card class=\"mx-auto\" height=\"350\" max-width=\"350\">\r\n            <img :src=\"'../images/' + names.name + '.png'\" class=\"card-img-top\" alt=\"...\">\r\n            <div v-if=\"names.enabled == true\" class=\"card-body\">\r\n              <h5 class=\"card-title\">{{ names.name }}</h5>\r\n              <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's\r\n                content.</p>\r\n              <div v-for=\"link in splitJoin(names.links)\">\r\n                <a :href=\"link\" class=\"\">{{ link }}</a>\r\n              </div>\r\n            </div>\r\n          </v-card>\r\n        </v-hover>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</template>\r\n<style lang=\"scss\" scoped>\r\n.v-card.on-hover.v-theme--dark {\r\n  background-color: rgba(#FFF, 0.8),\r\n\r\n}\r\n\r\n.v-card__text {\r\n  color: #000\r\n}\r\n</style>\r\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707368398112,
+      "end": 1707368398112,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707368398112,
+      "end": 1707368398112,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707368398112,
+      "end": 1707368398113,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707368398112,
+      "end": 1707368398113,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707368398113,
+      "end": 1707368398113,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".v-card.on-hover.v-theme--dark{background-color:hsla(0,0%,100%,.8)}.v-card__text{color:#000}",
+      "start": 1707368398113,
+      "end": 1707368398152,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/kchar/OneDrive/Documents/Projects/limelightsmp-website/app.vue",
+        "mappings": "AACA,+BACE,oCAIF,cACE",
+        "names": [],
+        "sources": [
+          "C:/Users/kchar/OneDrive/Documents/Projects/limelightsmp-website/app.vue"
+        ],
+        "sourcesContent": [
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707368398152,
+      "end": 1707368398152,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707368398152,
+      "end": 1707368398152,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707368398152,
+      "end": 1707368398152,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".v-card.on-hover.v-theme--dark[data-v-8b8048b7]{background-color:hsla(0,0%,100%,.8)}.v-card__text[data-v-8b8048b7]{color:#000}",
+      "start": 1707368398152,
+      "end": 1707368398153,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/kchar/OneDrive/Documents/Projects/limelightsmp-website/app.vue",
+        "mappings": "AAAA,gDAA+B,mCAAmC,CAAC,+BAAc,UAAU",
+        "names": [],
+        "sources": [
+          "C:/Users/kchar/OneDrive/Documents/Projects/limelightsmp-website/app.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707368398153,
+      "end": 1707368398153,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707368398153,
+      "end": 1707368398153,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707368398153,
+      "end": 1707368398153,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707368398153,
+      "end": 1707368398153,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707368398153,
+      "end": 1707368398153,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707368398153,
+      "end": 1707368398153,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707368398153,
+      "end": 1707368398153,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707368398153,
+      "end": 1707368398155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707368398155,
+      "end": 1707368398155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1707368398155,
+      "end": 1707368398155,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707368398155,
+      "end": 1707368398155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707368398155,
+      "end": 1707368398155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707368398155,
+      "end": 1707368398155,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707368398155,
+      "end": 1707368398156,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707368398156,
+      "end": 1707368398156,
+      "order": "normal"
+    }
+  ]
+}
