@@ -1,1 +1,2 @@
-{{ content }}
+@extends('layout')
+@section( 'content' )

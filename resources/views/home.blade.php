@@ -13,5 +13,5 @@
     </svg>
 </a>
 <article class="mt-4 bg-white p-8 shadow-xl rounded-xl max-w-xl prose">
-    {{ content | widont }}
+    @yield('content')
 </article>
