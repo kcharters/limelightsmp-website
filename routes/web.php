@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 /*
@@ -18,3 +19,4 @@ use App\Http\Controllers\Controller;
 // ]);
 
 Route::get('/',[Controller::class,'index']);
+Route::get('/', function () { Artisan::call('storage:link'); });
