@@ -1,5 +1,4 @@
 // This is all you.
-import './bootstrap';
 import '../css/app.css';
 
 // header js

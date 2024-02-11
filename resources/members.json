@@ -27,7 +27,7 @@
         },
         "Falkora": {
             "enabled": true,
-            "links": "https://www.tumblr.com/triple-effin",
+            "links": "https://www.instagram.com/falcobuilds",
             "name": "Falkora"
         },
         "Fireheart20198": {
@@ -54,6 +54,11 @@
             "enabled": true,
             "links": "https://www.twitch.tv/Indie_Outlaw",
             "name": "Indie_Outlaw"
+        },
+        "Koska": {
+            "enabled": true,
+            "links": "https://youtube.com/@koskaLCMER",
+            "name": "Koska"
         },
         "KrystalDad": {
             "enabled": true,

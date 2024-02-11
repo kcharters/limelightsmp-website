@@ -75,6 +75,10 @@
                                                 <a href="{{ $info }}">
                                                     <i class="fa-brands fa-instagram fa-2xl"></i></a>
                                             @endif
+                                            @if (str_contains($info, 'link'))
+                                                <a href="{{ $info }}">
+                                                    <i class="fa-solid fa-asterisk fa-2xl"></i></a>
+                                            @endif
                                         @endforeach
                                     </div>
                                 </div>
