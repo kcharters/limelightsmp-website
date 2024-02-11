@@ -5,8 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Storage;
 
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
+    public $name;
+    public $enabled;
+    public $links;
+
+    public function index()
+    {
+        $contents = Storage::json('members.json');
+
+        return view('home',['contents'=>$contents]);
+    }
 }
