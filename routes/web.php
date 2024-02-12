@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 /*
@@ -16,3 +17,6 @@ use App\Http\Controllers\Controller;
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'
 // ]);
+
+Route::get('/',[Controller::class,'index']);
+Route::get('/', function () { Artisan::call('storage:link'); });
