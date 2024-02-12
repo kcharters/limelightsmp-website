@@ -1,18 +1,23 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-    content: [
-        './resources/**/*.antlers.html',
-        './resources/**/*.antlers.php',
-        './resources/**/*.blade.php',
-        './resources/**/*.vue',
-        './content/**/*.md',
-    ],
-
-    theme: {
-        extend: {},
+module.exports = {
+  content: [
+    './resources/**/*.antlers.html',
+    './resources/**/*.blade.php',
+    './content/**/*.md'
+  ],
+  theme: {
+    extend: {
+        colors: {
+            'black': '#12151E',
+            'hot-pink': '#fd2d78'
+        },
+        fontFamily: {
+            display: "var(--font-display)",
+            body: "var(--font-body)",
+        }
     },
-
-    plugins: [
-        require('@tailwindcss/typography'),
-    ],
-};
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
+  important: true
+}
