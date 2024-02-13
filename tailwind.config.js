@@ -1,3 +1,4 @@
+const { iconsPlugin, getIconCollections } = require("@egoist/tailwindcss-icons")
 module.exports = {
   content: [
     './resources/**/*.antlers.html',
@@ -18,6 +19,9 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    iconsPlugin({
+      collections: getIconCollections("all")
+    })
   ],
   important: true
 }
