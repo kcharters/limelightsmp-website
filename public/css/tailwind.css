@@ -368,6 +368,8 @@ video {
   top: 0px !important;
 }.col-span-1 {
   grid-column: span 1 / span 1 !important;
+}.col-span-2 {
+  grid-column: span 2 / span 2 !important;
 }.m-0 {
   margin: 0px !important;
 }.mx-auto {
@@ -595,6 +597,8 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }@media (min-width: 768px) {.md\:col-span-2 {
     grid-column: span 2 / span 2 !important;
+  }.md\:col-span-1 {
+    grid-column: span 1 / span 1 !important;
   }.md\:ml-3 {
     margin-left: 0.75rem !important;
   }.md\:mt-0 {
@@ -612,6 +616,8 @@ video {
   }
 }@media (min-width: 1024px) {.lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }.lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   }.lg\:py-12 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
