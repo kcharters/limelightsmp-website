@@ -67,7 +67,7 @@ return [
         |
         */
 
-        'cache' => true,
+        'cache' => false,
         'cache_path' => public_path('img'),
 
         /*
@@ -113,7 +113,6 @@ return [
         */
 
         'generate_presets_on_upload' => true,
-
 
     ],
 

@@ -22,14 +22,3 @@ mix.postCss('resources/css/tailwind.css', 'public/css', [
 if (mix.inProduction()) {
    mix.version();
 }
-mix.webpackConfig({
-    plugins: [
-        
-    ],
-    resolve: {
-       
-    },
-    stats: {
-         children: true
-    }
-});
