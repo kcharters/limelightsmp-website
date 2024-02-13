@@ -4,8 +4,73 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7bedbff9265696a9c496d58753fa750",
+    "content-hash": "18d402f8c9fb901c0607a25945afa12d",
     "packages": [
+        {
+            "name": "aerni/font-awesome",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aerni/statamic-font-awesome.git",
+                "reference": "14e035e1d9f35592859b08bf8126e759a80723f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aerni/statamic-font-awesome/zipball/14e035e1d9f35592859b08bf8126e759a80723f5",
+                "reference": "14e035e1d9f35592859b08bf8126e759a80723f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "statamic/cms": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Font Awesome",
+                    "description": "A Statamic addon to easily add Font Awesome icons."
+                },
+                "laravel": {
+                    "providers": [
+                        "Aerni\\FontAwesome\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aerni\\FontAwesome\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Aerni",
+                    "email": "hello@michaelaerni.ch",
+                    "homepage": "https://michaelaerni.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Statamic addon to easily add Font Awesome icons.",
+            "homepage": "https://github.com/aerni/statamic-font-awesome",
+            "keywords": [
+                "font-awesome",
+                "statamic"
+            ],
+            "support": {
+                "issues": "https://github.com/aerni/statamic-font-awesome/issues",
+                "source": "https://github.com/aerni/statamic-font-awesome/tree/v2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/aerni",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-05-12T16:09:43+00:00"
+        },
         {
             "name": "ajthinking/archetype",
             "version": "v1.1.5",
@@ -1941,6 +2006,70 @@
                 "source": "https://github.com/JamesHeinrich/getID3/tree/v1.9.23"
             },
             "time": "2023-10-19T13:18:49+00:00"
+        },
+        {
+            "name": "jonassiewertsen/statamic-external-link",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonassiewertsen/statamic-external-link.git",
+                "reference": "78374d15f930963b35137f190bfba142b9fb585c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonassiewertsen/statamic-external-link/zipball/78374d15f930963b35137f190bfba142b9fb585c",
+                "reference": "78374d15f930963b35137f190bfba142b9fb585c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^9.0 || ^10.0",
+                "php": "^8.0",
+                "statamic/cms": "^3.3 || ^4.0 "
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "External Link",
+                    "description": "A Statamic fieldtype for external links"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jonassiewertsen\\ExternalLink\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jonassiewertsen\\ExternalLink\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Siewertsen"
+                }
+            ],
+            "description": "A Statamic fieldtype for external links",
+            "keywords": [
+                "fieldtype",
+                "link",
+                "statamic"
+            ],
+            "support": {
+                "email": "mail@jonassiewertsen.com",
+                "issues": "https://github.com/jonassiewertsen/statamic-external-link/issues",
+                "source": "https://github.com/jonassiewertsen/statamic-external-link/tree/v1.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jonassiewertsen",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-22T06:35:21+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
