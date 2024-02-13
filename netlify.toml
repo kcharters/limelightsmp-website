@@ -24,5 +24,4 @@
   for = "/sitemap.xml"
   [headers.values]
 	Content-Type = "application/xml"
-@kcharters
-Comment
+
