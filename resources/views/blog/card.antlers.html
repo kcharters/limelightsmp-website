@@ -6,10 +6,9 @@
             {{ $title }}
         </h3>
         <p class="text-xl text-gray-600">
-                <div class="text">
-                {{ external_link_field }}
-                </div>
-                <div>{{ icon_field }}</div>
+            {{ replicator_field}}
+                <a href="{{ external_link_field}}">{{ icon_field }}</a>
+            {{ /replicator_field }}
         </p>
     </div>
 </div>

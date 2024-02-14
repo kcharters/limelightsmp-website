@@ -1,9 +1,14 @@
 <article class="max-w-6xl mx-auto px-3">
     <header class="mx-auto max-w-xl text-center content">
-        <h1 class="mb-4">Blog</h1>
-        <p>This is description of the type of content you would expect to read here on this blog.</p>
+        <h1 class="mb-4">Limelight SMP  •  The Team</h1>
+        <p>
+            Limelight is a 100% content creator server where every member is equal.
+            
+            Our mission statement is community, creativity, content... & a little chaos.
+            
+            Meet the cast!</p>
     </header>
-    {{ collection:blog as="posts" paginate="12" sort="date:desc" }}
+    {{ collection:blog as="posts" paginate="32" sort="date:desc" }}
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-8">
             {{ posts }}
                 <div class="{{ $first ? 'md:col-span-1' : 'col-span-1' }}">

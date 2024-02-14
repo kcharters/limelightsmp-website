@@ -24,21 +24,45 @@ tabs:
               listable: hidden
               display: 'Hero Image'
           -
-            handle: external_link_field
+            handle: replicator_field
             field:
-              type: external_link
-              display: 'External Link Field'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: icon_field
-            field:
-              directory: public/assets/fontawesomeicons
-              type: icon
-              display: 'Icon Field'
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: external_link_field
+                          field:
+                            type: external_link
+                            display: 'External Link Field'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: icon_field
+                          field:
+                            directory: public/assets/fontawesomeicons
+                            type: icon
+                            display: 'Icon Field'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: 'Replicator Field'
               listable: hidden
               instructions_position: above
               visibility: visible
