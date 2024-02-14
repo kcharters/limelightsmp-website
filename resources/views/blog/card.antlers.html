@@ -1,13 +1,13 @@
 <div
-    class="transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl bg-white rounded-xl overflow-hidden">
+    class="transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl bg-zinc-800 rounded-xl overflow-hidden">
     <img class="rounded-xl" src="{{ $hero_image }}" alt="{{ $hero_image:alt }}">
     <div class="py-6 px-8">
-        <h3 class="font-bold text-2xl leading-tight">
+        <h3 class="font-bold text-2xl leading-tight ">
             {{ $title }}
         </h3>
-        <p class="text-xl text-gray-600">
+        <p class="text-xl text-gray-600 flex ml-4 mt-4">
             {{ replicator_field}}
-                <a href="{{ external_link_field}}">{{ icon_field }}</a>
+                <a href="{{ external_link_field}}" class="ml-4">{{ icon_field }}</a>
             {{ /replicator_field }}
         </p>
     </div>

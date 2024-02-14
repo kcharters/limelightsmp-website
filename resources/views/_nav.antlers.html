@@ -2,19 +2,6 @@
     <div class="max-w-5xl mx-auto px-3 py-3 flex items-center justify-between h-16">
         <a href="/" class="font-bold text-xl hover:text-lime-green">{{ settings:site_name }}</a>
 
-        <form action="/search" x-show="searching" x-cloak class="flex-1">
-            <input
-                name="q"
-                type="text"
-                class="w-full outline-none px-2 py-1 ml-3"
-                placeholder="Search for stuff"
-                x-on:blur="searching = false"
-                @keydown.enter="search"
-                @keydown.esc="searching = false"
-                x-show="searching"
-                x-ref="search"
-            />
-        </form>
     </div>
-    <div class="w-full border-b-2 border-black squiggle"></div>
+    <div class="w-full border-b-2 border-white squiggle"></div>
 </nav>
