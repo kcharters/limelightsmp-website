@@ -28,14 +28,14 @@
     <body class="bg-zinc-900 text-white font-body leading-normal personality-{{ $settings:personality }}">
         {{ partial:nav }}
         <main class="py-12 lg:py-20">
-            <h1 class="mb-4">Limelight SMP </h1>
+            <div class="flex items-center text-xl justify-center mt-4">
+                <h1 class="mb-4">Limelight SMP </h1>
             <p>
                 Limelight is a 100% content creator server where every member is equal.
                 
                 Our mission statement is community, creativity, content... & a little chaos.
                 
                 Meet the cast!</p>
-            <div class="flex items-center text-xl justify-center mt-4">
                 {{ settings:social }}
                     <a href="{{ $url }}" class="ml-4" aria-label="{{ $name }}" rel="noopener">
                         {{ svg :src="icon_field" class=" hover:text-green-700" }}
