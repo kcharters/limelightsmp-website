@@ -4,21 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $title }} — {{ $settings:site_name }}</title>
-    <meta name="description" content="{{ $intro | strip_tags | entities }}">
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "blogPost",
-            "name": "{{ $title }}",
-            "author": {
-                "@type": "Person",
-                "name": "{{ $author:name }}"
-            },
-            "datePublished": "{{ $date | format("Y-m-d") }}",
-            "description": "{{ $intro | strip_tags | entities }}"
-        }
-    </script>
+    <title>{{ $settings:site_name }}</title>
+    <meta name="description">
+    
     {{ font_awesome:kit token="32f8788ff2" }}
     <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
     {{ partial:personality }}
@@ -28,24 +16,7 @@
 <body class="bg-zinc-900 text-white font-body leading-normal personality-{{ $settings:personality }}">
     {{ partial:nav }}
     <main class="py-12 lg:py-20">
-        <div class=" items-center text-xl justify-center mt-4">
-            <h1 class=" flex text-xl  items-center justify-center mx-auto">Limelight SMP </h1>
-            <div class="flex mb-4 text-xl  items-center text-xl justify-center mt-4 mx-auto ">
-                <p class="">
-                    Limelight is a 100% content creator server where every member is equal.</p><br>
-
-                    <p class=" "> Our mission statement is community, creativity, content... & a little chaos.</p><br>
-
-                    <p class=" "> Meet the cast!</p><br>
-            </div>
-            <div class="flex mb-4 text-xl items-center justify-center  mt-4 mx-auto">
-                {{ settings:social }}
-                    <a href="{{ $url }}" class="ml-4" aria-label="{{ $name }}" rel="noopener">
-                        {{ svg :src="icon_field" class=" hover:text-green-700" }}
-                    </a>
-                {{ /settings:social }}
-            </div>
-        </div>
+        {{partial:header}}
         {{ $template_content }}
     </main>
     {{ partial:footer }}

@@ -11,20 +11,8 @@ data:
       icon: site/social-icons/twitter.svg
       icon_field: x-twitter
     -
-      id: TRS5X9uS
-      name: 'Youtube S2 Playlist'
-      url: 'https://www.youtube.com/playlist?list=PLLPqZJRXAEj5Nigj_tHwlRC-5-j8oM6x1'
-      icon: site/social-icons/youtube.svg
-      icon_field: youtube
-    -
       id: wa7FjKVl
       name: Instagram
       url: 'https://www.instagram.com/limelightsmp'
       icon: site/social-icons/instagram.svg
       icon_field: instagram
-    -
-      id: lsl7vv0r
-      name: Discord
-      url: 'https://discord.gg/z6mqRebPUq'
-      icon: site/social-icons/discord.svg
-      icon_field: discord
