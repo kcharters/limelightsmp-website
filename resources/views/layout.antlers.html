@@ -28,17 +28,17 @@
 <body class="bg-zinc-900 text-white font-body leading-normal personality-{{ $settings:personality }}">
     {{ partial:nav }}
     <main class="py-12 lg:py-20">
-        <div class="flex items-center text-xl justify-center mt-4">
-            <h1 class="mb-4 text-xl">Limelight SMP </h1>
-            <div>
-                <p>
-                    Limelight is a 100% content creator server where every member is equal.</p>
+        <div class=" items-center text-xl justify-center mt-4">
+            <h1 class=" flex text-xl  items-center justify-center mx-auto">Limelight SMP </h1>
+            <div class="flex mb-4 text-xl  items-center text-xl justify-center mt-4 mx-auto ">
+                <p class="">
+                    Limelight is a 100% content creator server where every member is equal.</p><br>
 
-                    <p> Our mission statement is community, creativity, content... & a little chaos.</p>
+                    <p class=" "> Our mission statement is community, creativity, content... & a little chaos.</p><br>
 
-                    <p> Meet the cast!</p>
+                    <p class=" "> Meet the cast!</p><br>
             </div>
-            <div>
+            <div class="flex mb-4 text-xl items-center justify-center  mt-4 mx-auto">
                 {{ settings:social }}
                     <a href="{{ $url }}" class="ml-4" aria-label="{{ $name }}" rel="noopener">
                         {{ svg :src="icon_field" class=" hover:text-green-700" }}

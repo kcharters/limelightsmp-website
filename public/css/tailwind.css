@@ -431,6 +431,8 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
 }.flex-wrap {
   flex-wrap: wrap !important;
+}.content-center {
+  align-content: center !important;
 }.items-center {
   align-items: center !important;
 }.justify-center {
