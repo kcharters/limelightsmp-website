@@ -1,19 +1,21 @@
 <h1 class="text-xl block text-center  justify-center mx-auto">Limelight SMP </h1>
-<div class="block text-center  justify-center mx-auto">
-    
-    <div>
-        <p class="">
-            Limelight is a 100% content creator server where every member is equal.</p><br>
-
-            <p class=" "> Our mission statement is community, creativity, content... & a little chaos.</p><br>
+<div class="block text-center justify-center mx-auto">
+    <div  class="block text-center justify-center mx-auto">
+        <p>
+            Limelight is a 100% content creator server where every member is equal.<br>
+            Our mission statement is community, creativity, content... & a little chaos.
+        </p>
     </div>
-    <div class="flex items-center justify-center">Season 2 playlist
+    <div class="flex items-center justify-center mt-4">
+    <div class="ml-4">Season 2 playlist
+        {{ collection from="links" }}
         
     </div> 
-    <div class="flex items-center justify-center">Community Discord
+    <div class="ml-4">Community Discord
 
     </div>
-    <div class="block mb-4 text-xl text-center justify-center ">
+</div>
+    <div class="block mb-4 text-xl text-center justify-center mt-4 ">
         <p >Check out the LimelightSMP socials here!</p>
         <div class="flex items-center justify-center" >
         {{ settings:social }}
