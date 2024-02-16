@@ -1,28 +1,31 @@
 <h1 class="text-xl block text-center  justify-center mx-auto">Limelight SMP </h1>
 <div class="block text-center justify-center mx-auto">
-    <div  class="block text-center justify-center mx-auto">
+    <div class="block text-center justify-center mx-auto">
         <p>
             Limelight is a 100% content creator server where every member is equal.<br>
             Our mission statement is community, creativity, content... & a little chaos.
         </p>
     </div>
     <div class="flex items-center justify-center mt-4">
-    <div class="ml-4">Season 2 playlist
-        {{ collection from="links" }}
-        
-    </div> 
-    <div class="ml-4">Community Discord
-
+        {{ collection:links title:contains="youtube"}}
+        <div class="ml-4 items-center justify-center">Season 2 playlist
+            <a href="{{ external_link_field}}" class="ml-4">{{ icon_field }}</a>
+        </div>
+        {{ /collection:links}}
+        {{ collection:links title:contains="discord"}}
+        <div class="ml-4 items-center justify-center">Community Discord
+            <a href="{{ external_link_field}}" class="ml-4">{{ icon_field }}</a>
+        </div>
+        {{ /collection:links}}
     </div>
-</div>
     <div class="block mb-4 text-xl text-center justify-center mt-4 ">
-        <p >Check out the LimelightSMP socials here!</p>
-        <div class="flex items-center justify-center" >
-        {{ settings:social }}
+        <p>Check out the LimelightSMP socials here!</p>
+        <div class="flex items-center justify-center">
+            {{ settings:social }}
             <a href="{{ $url }}" class="ml-4" aria-label="{{ $name }}" rel="noopener">
                 {{ svg :src="icon_field" class=" hover:text-green-700" }}
             </a>
-        {{ /settings:social }}
-    </div>
+            {{ /settings:social }}
+        </div>
     </div>
 </div>
