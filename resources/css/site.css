@@ -45,15 +45,3 @@
   }
 
 [x-cloak] { display: none; }
-
-@media (min-width: 701px) {
-  #headerimage {
-    background-image: url("/assets/limelightbrand/forblackbackground/limelight-with-lime.png");
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  #headerimage{
-    background-image: url("/assets/limelightbrand/forblackbackground/limelight-with-lime-for-phones.png");
-  }
-}
