@@ -1,9 +1,9 @@
-.personality-casual {
-    .squiggle {
+.personality-casual.squiggle {
+
         filter: url("#squiggle");
         position: relative;
         transform: translateZ(0);
-    }
+
 }
 
 .embed-responsive {
@@ -12,8 +12,8 @@
     height: 0;
     padding: 0;
     overflow: hidden;
-
-    .embed-responsive-item,
+}
+.embed-responsive-item,
     iframe,
     embed,
     object,
@@ -26,7 +26,7 @@
       width: 100%;
       border: 0;
     }
-  }
+
 
   .aspect-ratio-none {
     padding-bottom: 0;
@@ -46,3 +46,14 @@
 
 [x-cloak] { display: none; }
 
+@media (min-width: 701px) {
+  #headerimage {
+    background-image: url("/assets/limelightbrand/forblackbackground/limelight-with-lime.png");
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #headerimage{
+    background-image: url("/assets/limelightbrand/forblackbackground/limelight-with-lime-for-phones.png");
+  }
+}
