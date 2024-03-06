@@ -495,6 +495,9 @@ video {
 }.px-6 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
+}.py-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }.py-12 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
